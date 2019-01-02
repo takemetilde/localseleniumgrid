@@ -1,0 +1,2 @@
+set SELENIUM_GRID=C:\Users\AN455972AD\Dev\Bitbucket\localseleniumgrid
+java -Djava.util.logging.config.file=C:\Grid\nodelogging.properties -Dwebdriver.gecko.driver=%SELENIUM_GRID%\geckodriver.exe -Dwebdriver.chrome.driver=%SELENIUM_GRID%\chromedriver.exe -Dwebdriver.ie.driver=%SELENIUM_GRID%\IEDriverServer.exe -jar %SELENIUM_GRID%\selenium-server-standalone-3.141.59.jar -role node -hub http://30.128.209.155:4444/grid/register -nodeConfig %SELENIUM_GRID%\nodeconfig.json
